@@ -1,0 +1,107 @@
+/* styles.css */
+
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 28px;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+
+.color-table{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);;
+  grid-template-areas: 
+      "biru-tua biru-tua hitam hitam hitam hitam"
+      "biru-tua biru-tua coklat coklat putih pink"
+      "biru-tua biru-tua coklat coklat putih biru"
+      "kuning kuning ungu ungu putih biru"
+      "merah merah ungu ungu abu abu"
+      "hijau hijau orange orange abu abu";
+  height: 100%;
+}
+
+.cell {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cell.white-font {
+  color: white;
+}
+
+.color-table .cell:nth-child(1) {
+  grid-area: biru-tua;
+  background-color: #0482ce;
+}
+
+.color-table .cell:nth-child(2) {
+  grid-area: hitam;
+  background-color: black;
+}
+
+.color-table .cell:nth-child(3) {
+  grid-area: coklat;
+  background-color: #846404;
+}
+.color-table .cell:nth-child(4) {
+  grid-area: putih;
+  background-color: white;
+}
+
+.color-table .cell:nth-child(5) {
+  grid-area: pink;
+  background-color: pink;
+}
+
+.color-table .cell:nth-child(6) {
+  grid-area: biru;
+  background-color: #00b0f0;
+}
+
+.color-table .cell:nth-child(7) {
+  grid-area: kuning;
+  background-color: yellow;
+}
+
+.color-table .cell:nth-child(8) {
+  grid-area: merah;
+  background-color: red;
+}
+
+.color-table .cell:nth-child(9) {
+  grid-area: ungu;
+  background-color: #7030a0;
+}
+
+.color-table .cell:nth-child(10) {
+  grid-area: hijau;
+  background-color: #00b050;
+}
+
+.color-table .cell:nth-child(11) {
+  grid-area: orange;
+  background-color: orange;
+}
+
+.color-table .cell:nth-child(12) {
+  grid-area: abu;
+  background-color: #a6a6a6;
+}
+
+

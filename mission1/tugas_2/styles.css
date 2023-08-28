@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;300;400;500;600;700;800;900&family=Source+Serif+4:opsz,wght@8..60,200;8..60,300;8..60,400;8..60,500;8..60,600;8..60,700;8..60,800;8..60,900&display=swap');
+* {
+    font-family: "Source Sans 3", sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+
+  a:hover {
+    text-decoration: underline;
+}
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .container > * {
+    width: 100%;
+  }
+
+.bg-gray {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #F3F4F6;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+}
+
+  .menubar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1100px;
+    gap: 24px;
+    padding-top: 32px;
+    padding-bottom: 20px;
+  }
+
+.menubar-icon {
+    display: flex;
+    flex: 2;
+}
+
+.menubar .menubar:nth-child(1) {
+    display: flex;
+    flex: 1;
+}
+
+.menubar-pages{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.menubar-pages > * {
+    color: grey;
+    text-decoration: none;
+}
+
+.menu-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    max-width: 1000px;
+    margin-top: 20px;
+}
+
+
+h1 {
+    font-family: 'Source Serif 4', serif;
+    font-size: 60px;
+    font-weight: 600;
+    color: #38404F;
+}
+
+.bold-orange {
+    font-family: 'Source Serif 4', serif;
+    font-weight: 800;
+    color: orangered;
+}
+
+.subs-email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    max-width: 750px;
+    padding-top: 10px;
+}
+
+.subs-email:nth-child(1) {
+    color: #778298;
+    font-size: 21px;
+    line-height:1.5;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="email"] {
+    font-size: 16px;
+    color: #778298;
+    width: 60%;
+    height: 55px;
+    padding: 10px 20px;
+    margin: 8px 0;
+    box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 5px; /* Sudut kiri atas */
+    border-bottom-left-radius: 5px; /* Sudut kiri bawah */
+  }
+  
+  button {
+    background-color: #65D777;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    height: 55px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border-top-left-radius: 0px; /* Sudut kiri atas */
+    border-bottom-left-radius: 0px; /* Sudut kiri bawah */
+    border-top-right-radius: 5px; /* Sudut kanan atas */
+    border-bottom-right-radius: 5cap; /* Sudut kanan bawah */
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+.advantages-div {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
+    max-width: 1100px;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.advantages-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex: 1;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: 400;
+    color: #091836;
+    margin: 20px;
+}
+
+.advantages-list p {
+    color: #778298;
+    line-height:1.5;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.instructors-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    max-width: 1150px;
+    padding-top: 32px;
+    margin-top: 30px;
+    padding-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h2 {
+    font-family: 'Source Serif 4', serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #091836;
+}
+
+.view-complete {
+    text-decoration: none;
+    color: #DE3F1C;;
+}
+
+.instructors-column {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+
+.instructors {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    padding-top: 20px;
+}
+
+.instructors-img {
+    display: flex;
+    justify-content: left;
+    width: 100px;
+    overflow: hidden;
+
+}
+
+.instructors-img img {
+        width: 100px; 
+        height: 100px;
+        object-fit: cover; 
+        border-radius: 50%;
+        
+}
+
+.instructors-desc {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding-left: 30px;
+    gap: 5px;
+}
+
+
+h4 {
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.instructors-desc p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height:1.5;
+}
+
+.nama-nim-instructor{
+    text-decoration: underline;
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 2px solid #E7E9EE;
+}
+
+.nama-nim-instructor:hover{
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+    border-bottom: 2px solid #E7E9EE;
+}
+
+.subs-email-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 60px;
+}
+
+.subs-email-bottom-div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 40%;
+    padding-top: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: #F3F4F6;
+}
+
+.subs-email-bottom-div h4 {
+    color: #38404F;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.subs-email-bottom-div p {
+    color: #778298;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.subs-email-bottom-div form {
+    justify-content: left;
+    margin-bottom: 24px;
+}
+
+.subs-email-bottom-div form input[type="email"] {
+    width: 78%;
+}
+
+.subs-email-bottom-div form button{
+    padding: 8px 10px;
+    width: 120px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding-top: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 40px;
+    margin-left: 60px;
+    margin-right: 60px;
+    gap: 24px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-color: #f4f5f7;
+    color: #778298;
+}
+
+.empty {
+    display: flex;
+    flex: 1;
+}
+
+footer a {
+    text-decoration: none;
+    color: #778298;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+    .advantages-div {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+        max-width: 1100px;
+        padding: 10px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .instructors-column {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 25px;
+        padding-left: 10px;
+    }
+
+    .instructors {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        padding-top: 0px;
+    }
+
+    .instructors-desc {
+        padding-left: 0px;
+        padding-top: 10px;
+        gap: 5px;
+    }
+
+    .subs-email-bottom-div {
+        width: 100%;
+    }
+
+}
