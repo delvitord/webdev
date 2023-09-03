@@ -199,6 +199,24 @@ h2 {
     border-top: 1px solid #ccc;
 }
 
+.cart-list-item .cart-desc .remove {
+    background-color: #ff4b4b; 
+    color: #fff;
+    padding: 5px 10px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    font-size: 14px; 
+    width: 100px;
+  }
+  
+  .cart-list-item .cart-desc .remove:hover {
+    background-color: #ff3232; 
+  }
+  
+
+
 @media (max-width: 1100px) {
     #menu-side {
         width:60%;
