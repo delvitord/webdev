@@ -35,7 +35,7 @@ h2 {
 
 #list-items {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 
@@ -54,32 +54,31 @@ h2 {
     justify-content: center;
     align-items: center ;
     border-bottom: 1px solid orangered;
-    height: 18vw;
+    height: 12vw;
     background-color: rgba(245,245,245,255);
 }
 
 .item-img img {
     max-width: 100%;
     max-height: 100%;
-    width: 18vw;
 }
 
 .item-desc {
     display: flex;
     flex-direction: column;
-    height: 10vw;
+    height: 9vw;
 }
 
 .item-name {
     margin-top: 10px;
-    font-size: 1.5vw;
+    font-size: 1.35vw;
     font-weight: 700;
     margin-left: 10px;
     margin-right: 10px;
 }
 
 .item-price {
-    font-size: 1.4vw;
+    font-size: 1.3vw;
     margin-left: 10px;
     margin-bottom: 10px;
 }
@@ -100,10 +99,10 @@ h2 {
 
 
 .qty .btn{
-  width: 2.5vw;
-  height: 3vw;
+  width: 2vw;
+  height: 2.5vw;
   border-radius: 10px;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   margin: 5px 2px;
 }
 
@@ -112,11 +111,11 @@ h2 {
 }
 
 .count {
-  width: 4vw;
-  height: 3vw;
+  width: 3.5vw;
+  height: 2.5vw;
   border: 1px solid orangered;
   border-radius: 10px;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
 
 }
 
@@ -135,22 +134,72 @@ h2 {
   background-color: orangered;
   color: white;
   text-align: center;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   font-weight: 500;
+}
+
+@media (max-width: 1100px) {
+    #list-items {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media (max-width: 900px) {
     #list-items {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
     }
+
+    .item-name {
+        font-size: 1.9vw;
+    }
+    
+    .item-price {
+        font-size: 1.8vw;
+    }
+
+    .qty .btn{
+        font-size: 2vw;
+      }
+      
+      .count {
+        font-size: 2vw;
+      }
+
+      
+    .orange-bar {
+        font-size: 1.8vw;
+      }
 }
 
 @media (max-width: 768px) {
     #list-items {
-        display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
     }
+
+    .item-name {
+        font-size: 2.5vw;
+    }
+    
+    .item-price {
+        font-size: 2.4vw;
+    }
+
+
+    .qty .btn{
+        width: 3vw;
+        height: 4vw;
+        font-size: 2.4vw;
+    }
+    
+    .count {
+        width: 5vw;
+        height: 4vw;
+        font-size: 2.4vw;
+    }
+
+    
+    .orange-bar {
+        font-size: 2.2vw;
+    }
+
 }
