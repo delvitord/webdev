@@ -186,7 +186,7 @@ document.addEventListener("DOMContentLoaded", function () {
         new ShopItem("Konnyaku Penerjemah", 700000, "Konnyaku.webp"),
         new ShopItem("Senter Pembesar", 100000, "Senter.webp"),
         new ShopItem("Kain Pembungkus Waktu", 9000000, "kain-waktu.jpg"),
-    ];
+    ]; 
 
     items.forEach((item, index) => {
         listItemsContainer.appendChild(item.createHTML(index));
