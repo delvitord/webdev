@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;300;400;500;600;700;800;900&family=Source+Serif+4:opsz,wght@8..60,200;8..60,300;8..60,400;8..60,500;8..60,600;8..60,700;8..60,800;8..60,900&display=swap');
+* {
+    font-family: "Source Sans 3", sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+.container {
+    display: flex;
+    margin-top: 20px;
+}
+
+#menu-side {
+    width: 65%;
+    padding: 20px 40px;
+    border-right: 1px solid #ccc;
+
+}
+#cart {
+    width: 35%;
+    padding: 20px 30px;
+    
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+#list-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid orangered;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.item-img {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    border-bottom: 1px solid orangered;
+    height: 18vw;
+    background-color: rgba(245,245,245,255);
+}
+
+.item-img img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 18vw;
+}
+
+.item-desc {
+    display: flex;
+    flex-direction: column;
+    height: 10vw;
+}
+
+.item-name {
+    margin-top: 10px;
+    font-size: 1.5vw;
+    font-weight: 700;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.item-price {
+    font-size: 1.4vw;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.add-to-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.qty {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.qty .btn{
+  width: 2.5vw;
+  height: 3vw;
+  border-radius: 10px;
+  font-size: 1.5vw;
+  margin: 5px 2px;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.count {
+  width: 4vw;
+  height: 3vw;
+  border: 1px solid orangered;
+  border-radius: 10px;
+  font-size: 1.5vw;
+
+}
+
+.blue {
+  background-color: orangered;
+  color: white;
+}
+
+.white {
+  background-color: white;
+  color: black;
+}
+
+.orange-bar {
+  width: 100%;
+  background-color: orangered;
+  color: white;
+  text-align: center;
+  font-size: 1.5vw;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+    #list-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    #list-items {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+}
