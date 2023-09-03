@@ -33,7 +33,7 @@ body {
     
 }
 
-.cart-list-item {
+.cart-list {
     display: flex;
     flex-direction: row;
     align-items: center ;
@@ -57,12 +57,12 @@ body {
     justify-content: center;
     align-items: center ;
     padding: 0 10px;
-    width: 70px;
+    width: 50px;
 
 }
 
 .cart-img img {
-    width: 70px;
+    width: 50px;
 }
 
 h2 {
