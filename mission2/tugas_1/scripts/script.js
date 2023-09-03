@@ -6,11 +6,22 @@ document.addEventListener("DOMContentLoaded", function() {
             this.cart = [];
             this.total = 0;
         }
-
+    
         addToCart(item) {
-            this.cart.push(item);
+            // Cari apakah item sudah ada dalam keranjang
+            const existingItem = this.cart.find((cartItem) => cartItem.name === item.name);
+    
+            if (existingItem) {
+                // Jika item sudah ada, sesuaikan kuantitas dengan jumlah yang ada di tombol count
+                existingItem.quantity = item.quantity;
+            } else {
+                // Jika item belum ada, tambahkan item baru ke keranjang
+                this.cart.push({ ...item }); // Klone objek item
+            }
+    
             this.updateCart();
         }
+        
 
         updateCart() {
             const cartContainer = document.querySelector(".cart");
