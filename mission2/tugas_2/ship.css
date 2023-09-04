@@ -3,7 +3,6 @@ body {
     text-align: center;
     background-color: orangered;
     color: white;
-
 }
 
 
@@ -12,5 +11,5 @@ body {
     background-size:cover;
     background-repeat: no-repeat; /* Tambahkan ini untuk menghindari pengulangan gambar */
     border-radius: 20px;
-    box-shadow: 0 0 10px 10px yellow;
+    box-shadow: 0 0 0 10px white;
 }

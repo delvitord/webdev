@@ -34,7 +34,7 @@ let enemy2Img;
 let enemy3Img;
 
 // Physics
-let velocityX = -8; // Enemy moving left speed
+let velocityX = -6; // Enemy moving left speed
 let velocityY = 0;
 let gravity = 0.4;
 
@@ -83,9 +83,9 @@ function handleKeyPress(e) {
     if (e.code === "Space" && playerY > 30 && !jumping) {
         jump();
     } else if (e.code == "ArrowUp" && playerY > 30) {
-        moveVertical(-20); // Mengganti nama duck menjadi moveVertical
+        moveVertical(-30); // Mengganti nama duck menjadi moveVertical
     } else if (e.code == "ArrowDown" && playerY < 380) {
-        moveVertical(20); // Mengganti nama duck menjadi moveVertical
+        moveVertical(30); // Mengganti nama duck menjadi moveVertical
     }
 }
 
@@ -104,6 +104,13 @@ function moveVertical(offsetY) {
 function update() {
     requestAnimationFrame(update);
     if (gameOver) {
+        context.fillStyle = "white";
+        context.font = "48px 'Press Start 2P', cursive";
+        const gameOverText = "Game Over";
+        const textWidth = context.measureText(gameOverText).width;
+        const centerX = (board.width - textWidth) / 2;
+        context.fillText(gameOverText, centerX, 250);
+
         return;
     }
     context.clearRect(0, 0, board.width, board.height);
@@ -157,7 +164,7 @@ function displayScore() {
     score++;
     const scoreText = "Score: " + score;
     const textWidth = context.measureText(scoreText).width;
-    const centerX = (board.width - textWidth) / 2;
+    const centerX = 700;
     context.fillText(scoreText, centerX, 50);
 }
 
