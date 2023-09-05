@@ -3,9 +3,9 @@ This repository stores all results of the Web Development Practicum course for s
 
 Link website yang telah dideploy:
 - Mission 1:
-- 1. Tugas 1: https://delvitord.github.io/webdev/mission1/tugas_1/index.html
-- 2. Tugas 2: https://delvitord.github.io/webdev/mission1/tugas_2/index.html
+ 1. Tugas 1: https://delvitord.github.io/webdev/mission1/tugas_1/index.html
+ 2. Tugas 2: https://delvitord.github.io/webdev/mission1/tugas_2/index.html
 
 - Mission 2:
-- 1. Tugas 1: https://delvitord.github.io/webdev/mission2/tugas_1/index.html
-- 2. Tugas 2: https://delvitord.github.io/webdev/mission2/tugas_2/index.html
+ 1. Tugas 1: https://delvitord.github.io/webdev/mission2/tugas_1/index.html
+ 2. Tugas 2: https://delvitord.github.io/webdev/mission2/tugas_2/index.html
